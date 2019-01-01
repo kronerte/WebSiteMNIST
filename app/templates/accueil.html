@@ -1,0 +1,23 @@
+{% extends "squelette.html" %}
+
+{% block titre %}Accueil{% endblock %}
+
+{% block corps %}
+<h1> Transformation </h1>
+
+<form method="post" action="{{url_for('transform')}}" enctype="multipart/form-data">
+    <div class="form-group ">
+       <input type="text" name="name" id="name" placeholder="Nom de l'image" /><br />
+
+       <input type="file" name="image" id="image" class="btn btn-secondary" /><br />
+
+       <select name="Transformation">
+          <option value="EMBOSS">EMBOSS</option>
+          <option value="FIND_EDGES">FIND_EDGES</option>
+          <option value="MNIST_PREDICTION">MNIST_PREDICTION</option>
+      </select><br>
+    </div>
+
+    <input type="submit" name="submit" value="Envoyer" class="btn btn-primary"/>
+</form>
+{% endblock %}
