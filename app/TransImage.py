@@ -1,6 +1,6 @@
 from PIL import Image, ImageFilter
 import numpy as np
-from cnn import *
+from app.cnn import *
 
 
 
