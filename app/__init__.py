@@ -22,7 +22,7 @@ def transform():
     # Traitement
     image, name =do(method, image, name)
     # Enregistrement et affichage
-    image.save(f'static/{name}.png')
+    image.save(f'app/static/{name}.png')
     return render_template("transform.html",image=name)
 
 if __name__ == '__main__':
