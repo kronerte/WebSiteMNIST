@@ -3,4 +3,5 @@ Flask-Cors==3.0.4
 numpy==1.14.3
 Pillow==5.1.0
 tensorflow==1.9.0
+gunicorn
 
